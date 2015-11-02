@@ -23,10 +23,17 @@ class StarRatingExtension extends \Twig_Extension
 
     public function rating($number, $max = 5, $starSize = "")
     {
+    
+    	$roundDown=floor($number);
+    	$roundUp=ceil($number);
+    	$fraction=(round($number*2,0,PHP_ROUND_HALF_UP)/2)-floor($number);
+    
         return $this->container->get('templating')->render(
             'StarRatingBundle:Display:ratingDisplay.html.twig',
             array(
-                'stars' => $number,
+                'roundDown' => $roundDown,
+                'roundUp'=>$roundUp,
+                'fraction'=>$fraction,
                 'max' => $max,
                 'starSize' => $starSize
             )

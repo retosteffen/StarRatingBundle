@@ -50,6 +50,23 @@
     color:#e3cf7a;
 }
 
+.rating div.star-half {
+    font-family:FontAwesome;
+    font-weight:normal;
+    font-style:normal;
+    font-size: 25px;
+    display:inline-block;
+    position: relative;
+}
+
+.rating div.star-half:before  {
+    content:"\f123";
+    padding-right:5px;
+    color:#e3cf7a;
+}
+
+
+
 .rating div.star-empty {
     font-family:FontAwesome;
     font-weight:normal;
