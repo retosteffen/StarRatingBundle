@@ -113,6 +113,9 @@ if you want to use the [font awesome icon sizes](http://fortawesome.github.io/Fo
 If you want the smallest size use "fa-norm" (in font awesome, this would be the same as not providing an size class); providing no size argument sets the font size to 25px which is somewhere in between "fa-lg" and "fa-2x".
 To customize the size, feel free to override the css.
 
+When ratings are displayed, they are rounded to the closest half star, ie 2.3 and 2.6 equals 2 and a half star.
+
+
 License
 =======
 This bundle is under the MIT license. See the complete license in the bundle:
